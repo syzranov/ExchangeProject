@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Exchange">
+  <DataContextMoniker Name="/ExchangeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1f73d677-7b0c-4303-8c07-f2d3299b6821" absoluteBounds="2, 5, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ExchangeDataContext/Currency" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa0c4c0a-4e95-43d1-bc62-d077e4e3b6c8" absoluteBounds="2.0149999999999997, 5.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5de71892-a3c6-44a3-9957-3a357bcda236" absoluteBounds="7.625, 3.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ExchangeDataContext/Client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b358ce2-895a-4d62-916e-daca7345445e" absoluteBounds="7.6400000000000006, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3027a0e-863b-4291-ade9-3a9a0acaa676" absoluteBounds="7.625, 5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ExchangeDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df67509f-c390-4979-9610-c2055bc84ed0" absoluteBounds="7.6400000000000006, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="372c45f6-e200-4f82-8b3c-f281077def91" absoluteBounds="4.75, 5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ExchangeDataContext/Price" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e158844e-ec67-4dda-8019-d6895762cce4" absoluteBounds="4.765, 5.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d770aa77-b308-45a0-acbc-938a13759093" absoluteBounds="4.375, 1.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ExchangeDataContext/ServerLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32cc003c-b2d1-4857-9d44-0a324e8e4931" absoluteBounds="4.39, 1.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ddbb6df-c5b6-43c0-b074-b024443940f2" absoluteBounds="7.625, 1.25, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/ExchangeDataContext/EventType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4cc6982-2b77-455b-ab24-2a260d8af69f" absoluteBounds="7.6400000000000006, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.625 : 1.84699625651042); (6.375 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExchangeDataContext/EventType/EventType_ServerLog" />
+      <nodes>
+        <classShapeMoniker Id="8ddbb6df-c5b6-43c0-b074-b024443940f2" />
+        <classShapeMoniker Id="d770aa77-b308-45a0-acbc-938a13759093" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4 : 5.69314697265625); (4.75 : 5.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ExchangeDataContext/Currency/Currency_Price" />
+      <nodes>
+        <classShapeMoniker Id="1f73d677-7b0c-4303-8c07-f2d3299b6821" />
+        <classShapeMoniker Id="372c45f6-e200-4f82-8b3c-f281077def91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 5.78929768880208); (7.625 : 5.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ExchangeDataContext/Price/Price_Order" />
+      <nodes>
+        <classShapeMoniker Id="372c45f6-e200-4f82-8b3c-f281077def91" />
+        <classShapeMoniker Id="b3027a0e-863b-4291-ade9-3a9a0acaa676" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 4.5112939453125); (8.625 : 5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExchangeDataContext/Client/Client_Order" />
+      <nodes>
+        <classShapeMoniker Id="5de71892-a3c6-44a3-9957-3a357bcda236" />
+        <classShapeMoniker Id="b3027a0e-863b-4291-ade9-3a9a0acaa676" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,13 @@
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Server.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Server.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Common.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.DAL.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Extentions.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Utils.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Common.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.DAL.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Extentions.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\bin\Debug\Exchange.Utils.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\obj\Debug\Exchange.Server.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\obj\Debug\Exchange.Server.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Server\obj\Debug\Exchange.Server.pdb

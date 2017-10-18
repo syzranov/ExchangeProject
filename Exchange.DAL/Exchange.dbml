@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database EntityNamespace="Exchange.DAL" Class="ExchangeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="Currency" Member="Currencies">
+    <Type Name="Currency">
+      <Column Name="Name" Type="System.String" DbType="varchar(255)" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="varchar(255)" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="varchar(255)" CanBeNull="false" />
+      <Association Name="Currency_Price" Member="Prices" ThisKey="Code" OtherKey="CurrencyCode" Type="Price" />
+    </Type>
+  </Table>
+  <Table Name="Client" Member="Clients">
+    <Type Name="Client">
+      <Column Name="Id" Type="System.Guid" DbType="uniqueidentifier" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="datetime" CanBeNull="false" />
+      <Column Name="EndDateTime" Type="System.DateTime" DbType="datetime" CanBeNull="true" />
+      <Association Name="Client_Order" Member="Orders" ThisKey="Id" OtherKey="ClientId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="Order" Member="Orders">
+    <Type Name="Order">
+      <Column Name="Id" AutoSync="Never" Type="System.Int32" DbType="int identity(1,1)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DealValue" Type="System.Decimal" DbType="numeric(28,10)" CanBeNull="false" />
+      <Column Name="DealDate" Type="System.DateTime" DbType="datetime" CanBeNull="false" />
+      <Column Name="PriceId" Type="System.Int32" DbType="int" CanBeNull="true" />
+      <Column Name="ClientId" Type="System.Guid" DbType="uniqueidentifier" CanBeNull="false" />
+      <Association Name="Client_Order" Member="Client" ThisKey="ClientId" OtherKey="Id" Type="Client" IsForeignKey="true" />
+      <Association Name="Price_Order" Member="Price" ThisKey="PriceId" OtherKey="Id" Type="Price" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Price" Member="Prices">
+    <Type Name="Price">
+      <Column Name="CurrencyCode" Type="System.String" DbType="varchar(255) " CanBeNull="false" />
+      <Column Name="DateUpd" Type="System.DateTime" DbType="datetime" CanBeNull="false" />
+      <Column Name="CurrencyPrice" Type="System.Decimal" DbType="decimal(28,10)" CanBeNull="false" />
+      <Column Name="Id" AutoSync="Never" Type="System.Int32" DbType="int identity(1,1)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Price_Order" Member="Orders" ThisKey="Id" OtherKey="PriceId" Type="Order" />
+      <Association Name="Currency_Price" Member="Currency" ThisKey="CurrencyCode" OtherKey="Code" Type="Currency" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="ServerLogs">
+    <Type Name="ServerLog">
+      <Column Name="EventDate" Type="System.DateTime" DbType="datetime" CanBeNull="false" />
+      <Column Name="EventTypeId" Type="System.Int32" DbType="int" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="varchar(1000)" CanBeNull="false" />
+      <Column Name="Id" AutoSync="Never" Type="System.Int32" DbType="int identity(1,1)" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AvailableClientsCount" Type="System.Int32" DbType="int" CanBeNull="false" />
+      <Column Name="ServerId" Type="System.Guid" DbType="uniqueidentifier" CanBeNull="false" />
+      <Association Name="EventType_ServerLog" Member="EventType" ThisKey="EventTypeId" OtherKey="Id" Type="EventType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="EventType" Member="EventTypes">
+    <Type Name="EventType">
+      <Column Name="Id" Type="System.Int32" DbType="int" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="varchar(255)" CanBeNull="false" />
+      <Association Name="EventType_ServerLog" Member="ServerLogs" ThisKey="Id" OtherKey="EventTypeId" Type="ServerLog" />
+    </Type>
+  </Table>
+</Database>

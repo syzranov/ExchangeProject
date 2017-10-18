@@ -1,0 +1,13 @@
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Client.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Client.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Common.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.DAL.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Utils.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Extentions.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Common.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.DAL.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Utils.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\bin\Debug\Exchange.Extentions.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\obj\Debug\Exchange.Client.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\obj\Debug\Exchange.Client.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Client\obj\Debug\Exchange.Client.pdb

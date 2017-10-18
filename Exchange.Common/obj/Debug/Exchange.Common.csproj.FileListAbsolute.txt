@@ -1,0 +1,5 @@
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Common\bin\Debug\Exchange.Common.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Common\bin\Debug\Exchange.Common.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Common\obj\Debug\Exchange.Common.dll
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Common\obj\Debug\Exchange.Common.pdb
+C:\Users\Andrey\Documents\Visual Studio 2013\Projects\Stock\v.1.5\Exchange\Exchange.Common\obj\Debug\Exchange.Common.csprojResolveAssemblyReference.cache
