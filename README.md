@@ -1,5 +1,3 @@
-"# ExchangeProject" 
-
 Exchange
 
 Проект Exchange - это пример работы рынка валют. 
